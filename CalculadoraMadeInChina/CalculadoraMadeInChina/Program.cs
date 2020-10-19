@@ -6,7 +6,14 @@ namespace CalculadoraMadeInChina
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            while(true)
+            {
+                UserInterface.PrintMainMenu();
+                string option = System.Console.ReadLine();
+                System.Console.WriteLine("Has elegido " + option);
+
+            }
+            
         }
     }
 }
