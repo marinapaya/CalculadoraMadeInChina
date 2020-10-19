@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace CalculadoraMadeInChina
@@ -8,6 +9,7 @@ namespace CalculadoraMadeInChina
     {
         public static void PrintMainMenu()
         {
+            
             System.Console.WriteLine("Calculadora Made In China");
             System.Console.WriteLine("-------------------------");
             System.Console.WriteLine("1) Sumar una serie de números");
@@ -18,6 +20,21 @@ namespace CalculadoraMadeInChina
             System.Console.WriteLine("6) Es primo o no");
             System.Console.WriteLine("7) Sumatorio de una serie de números");
             System.Console.WriteLine("0) Salir de la aplicación");
+        }
+
+        public static int ReadOption()
+        {
+            string option = System.Console.ReadLine();
+           
+            try
+            {
+                int result = System.Convert.ToInt32(option);
+                return result;
+            }
+            catch  (System.Exception e)
+            {
+                return -1;
+            }
         }
     }
 }
