@@ -22,6 +22,16 @@ namespace CalculadoraMadeInChina
             System.Console.WriteLine("0) Salir de la aplicación");
         }
 
+        public static void PrintAddMenu()
+        {
+            System.Console.WriteLine("Suma de Números");
+            System.Console.WriteLine("---------------");
+            System.Console.WriteLine("1) ");
+            System.Console.WriteLine("2) ");
+            System.Console.WriteLine("3) ");
+            System.Console.WriteLine("4) ");
+        }
+
         public static int ReadOption()
         {
             string option = System.Console.ReadLine();
