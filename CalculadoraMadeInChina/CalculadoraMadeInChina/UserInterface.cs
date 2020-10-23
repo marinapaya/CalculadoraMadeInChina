@@ -22,14 +22,19 @@ namespace CalculadoraMadeInChina
             System.Console.WriteLine("0) Salir de la aplicación");
         }
 
-        public static void PrintAddMenu()
+        public static void PrintAddHeader()
         {
             System.Console.WriteLine("Suma de Números");
             System.Console.WriteLine("---------------");
-            System.Console.WriteLine("1) ");
-            System.Console.WriteLine("2) ");
-            System.Console.WriteLine("3) ");
-            System.Console.WriteLine("4) ");
+        }
+
+        public static void PrintAddSubMenu()
+        {
+            System.Console.WriteLine("Suma de Números");
+            System.Console.WriteLine("---------------");
+            System.Console.WriteLine("0) Salir al menú principal ");
+            System.Console.WriteLine("1) Sumar otro número ");
+            System.Console.WriteLine("2) Realizar otra suma ");
         }
 
         public static int ReadOption()
