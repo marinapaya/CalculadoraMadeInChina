@@ -9,7 +9,10 @@ namespace CalculadoraMadeInChina
             while(true)
             {
                 UserInterface.PrintAddMenu();
-
+                int number1 = ManageUtils.ReadInteger("Introduzca el primer número");
+                int number2 = ManageUtils.ReadInteger("Introduzca el segundo número");
+                int result = number1 + number2;
+                System.Console.WriteLine("El resultado es " + result);
             }
         }
 
